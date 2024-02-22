@@ -1,0 +1,16 @@
+apiVersion: custom/v1
+kind: Component
+metadata:
+  name: my-component
+spec:
+  source:
+    git:
+      org: my-org
+      repo: my-repo
+      instance: my-instance
+    path: /src
+  pipeline:
+    type: oci_multi
+    params:
+      - name: my-param
+        value: my-value

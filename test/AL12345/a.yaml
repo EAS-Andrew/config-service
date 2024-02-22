@@ -1,0 +1,14 @@
+apiVersion: custom/v1
+kind: ArtefactRepository
+metadata:
+  name: oci-repo
+spec:
+  type: oci
+  access:
+    - role: admin
+      users:
+        - my-user
+        - my-other-user
+      groups:
+        - my-group
+        - my-other-group
